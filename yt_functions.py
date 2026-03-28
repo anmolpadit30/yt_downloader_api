@@ -7,6 +7,7 @@ def get_song_details(url):
     ydl_opts = {
         'quiet': True,
         'skip_download': True,
+        'cookiefile': 'cookies.txt'
     }
 
     with YoutubeDL(ydl_opts) as ydl:
@@ -30,6 +31,7 @@ def get_audio_stream_url(url):
         'quiet': True,
         'format': 'bestaudio/best',
         'skip_download': True,
+        'cookiefile': 'cookies.txt'
     }
 
     with YoutubeDL(ydl_opts) as ydl:
