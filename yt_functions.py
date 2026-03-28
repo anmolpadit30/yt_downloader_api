@@ -29,7 +29,7 @@ def get_audio_stream_url(url):
 
     ydl_opts = {
         'quiet': True,
-        'format': 'bestaudio/best',
+        'format': 'bestaudio*',
         'skip_download': True,
         'cookiefile': 'cookies.txt'
     }
