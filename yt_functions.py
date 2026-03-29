@@ -57,6 +57,7 @@ def download_youtube_mp3(url, output_path="downloads"):
             }
         ],
         'noplaylist': True,   # avoid accidentally grabbing whole playlist
+        'cookiefile': 'cookies.txt'
     }
 
     with YoutubeDL(ydl_opts) as ydl:
