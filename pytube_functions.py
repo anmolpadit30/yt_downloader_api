@@ -3,7 +3,7 @@ import os
 
 def download_song_pytube(url):
     try:
-        yt = YouTube(url)
+        yt = YouTube(url, use_po_token=True)
         # Filter for audio only and select the first available stream
         audio_stream = yt.streams.filter(only_audio=True).first()
 
